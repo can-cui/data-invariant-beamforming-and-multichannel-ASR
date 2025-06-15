@@ -14,9 +14,11 @@ The beamformer extracts signals from predefined angular sectors without requirin
 
 - **Steering Vector Generation**  
   Path: [`egs/DAS/data_invariant.py`](https://github.com/can-cui/asteroid-related/blob/main/egs/DAS/data_invariant.py)  
-  This script performs integration over the 3D space to compute the `a` and `c` vectors, where  
-`a = d ⋅ dᴴ ⋅ cos(θ)` and `c = b² ⋅ cos(θ)`,  
-and stores them in a `.npy` file.
+  This script performs numerical integration over the 3D space to compute the `a` and `c` vectors defined in Equation (5) of the paper:  
+`a = ∫Ω cos(θ) · d(θ, φ, f) · d(θ, φ, f)ᴴ dθ dφ`  
+`c = ∫Ψₛ cos(θ) · d(θ, φ, f) dθ dφ`  
+These quantities are then stored in a `.npy` file for efficient reuse.
+
 
 
 - **Beamformer Response Generation**  
