@@ -1,5 +1,3 @@
-# data-invariant-beamforming-and-multichannel-ASR
-
 # Data-Invariant Beamforming and Multichannel ASR
 
 This repository collects code and training scripts used in the paper **"Data-Invariant Beamforming for End-to-End Multichannel Multi-Speaker ASR"**. The work proposes a beamforming method that requires no data-driven training and integrates seamlessly with end-to-end ASR models for multi-speaker, multi-microphone scenarios.
