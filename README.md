@@ -62,6 +62,20 @@ The following training recipes are used for comparison in the paper:
 
 ---
 
+## 🎧 Visualization
+
+To visually compare responses of different beamformers, use:
+
+- [`data_invariant_fr_file.ipynb`](https://github.com/can-cui/asteroid-related/blob/main/egs/DAS/data_invariant_fr_file.ipynb)  
+  This notebook plots responses
+
+To visually compare audio quality (e.g., denoised vs. raw signals), use:
+
+- [`Visualize_data_inv_beamformed.ipynb`](https://github.com/can-cui/asteroid-related/blob/main/egs/DAS/Visualize_data_inv_beamformed.ipynb)  
+  This notebook plots spectrograms for qualitative comparison acr
+  
+---
+
 ## 📌 Citation
 
 If you find this work helpful, please consider citing the original paper (citation info to be added upon publication).
